@@ -8,6 +8,7 @@
 <body>
   <div id="app">
     <h1>Countries</h1>
+    <h2 v-if="worldPopulation">{{ worldPopulation }}</h2>
     <form class="">
       <select v-model="index" v-on:change="selectCountry(index)">
         <option
